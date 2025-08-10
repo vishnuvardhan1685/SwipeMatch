@@ -19,7 +19,6 @@ const httpServer = createServer(app);
 const PORT = process.env.PORT || 5000;
 
 const __dirname = path.resolve();
-console.log(__dirname)
 
 initializeSocket(httpServer);
 app.use(express.json({limit: '10mb'}));
